@@ -16,7 +16,7 @@ Download the files and create a new user. Specify shell.py as the user's shell. 
 
 After you've installed it and set everything up properly using TCVM is very straight forward. There is a help command that you can read whenever. Commands are written to be easily remembered and tab completed. Just to paint you the picture your first time using TCVM will look something like this:
 
-$ su cvm
+<pre># su cvm
 :: TrueCrypt Volume Manager (c) 2013 qnrq ::
 :: type help for help for help for help.. ::
 WARNING: Missing configuration file, run configure
@@ -88,4 +88,4 @@ Mounted  Container
         /home/cvm/containers/master.tc
         /home/cvm/containers/demo.tc
 TCVM> exit
-Bye!**
+Bye!</pre>
