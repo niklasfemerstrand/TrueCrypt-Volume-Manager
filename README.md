@@ -28,7 +28,7 @@ clear                        Clears the terminal
 showconf                     Prints current configuration table
 configure                    Configuration wizard
 create                       Creates encrypted container (wizard)
-chpass <drive>               Changes passphrase of given drive
+chpass <<drive>>               Changes passphrase of given drive
 list <all|mounted>           Lists located containers
 mount <drive> <path>         Mounts a drive
 unmount <all|drive>          Unmounts a drive
