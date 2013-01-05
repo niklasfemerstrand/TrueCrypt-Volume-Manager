@@ -1,0 +1,3 @@
+[main]
+container_path = /home/cvm/containers/
+use_master_container = yes
