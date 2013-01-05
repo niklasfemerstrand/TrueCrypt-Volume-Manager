@@ -1,6 +1,6 @@
 # TrueCrypt Volume Manager #
 
-Linux has DM-CRYPT, FreeBSD has GEOM_ELI and Oracle is holding ZFS encryption options open source. The incompatible nature of encrypted storage throughout various UNIX systems is an obvious problem. TrueCrypt supports most popular platforms but until now there hasn't been a simple way to organize and maintain TrueCrypt containers over different types of systems. TrueCrypt Volume Manager aims to be this bridge.
+Linux has DM-CRYPT, FreeBSD has GEOM_ELI and Oracle is holding ZFS encryption options closed source. The incompatible nature of encrypted storage throughout various UNIX systems is an obvious problem. TrueCrypt supports most popular platforms but until now there hasn't been a simple way to organize and maintain TrueCrypt containers over different types of systems. TrueCrypt Volume Manager aims to be this bridge.
 
 TrueCrypt Volume Manager, shortened TCVM, is a UNIX shell environment written in Python. It provides a simple CLI shell interface to easily create, mount, unmount and list containers and also the possibility to easily change the passphrase of a given encryption container. Since TCVM is intended to run as a UNIX shell this allows you to securely administrate your TrueCrypt containers over the SSH protocol.
 
