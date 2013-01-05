@@ -217,7 +217,7 @@ def createContainer(opts = {}):
 
 	print "\033[1;32mCreating container " + opts["path"] + "\033[1;m"
 
-	os.popen("truecrypt -t -c --random-source=\"/dev/urandom\" --volume-type=" + opts["volume-type"] + " --size=" + opts["size"] + " --encryption=" + opts["encryption"] + " --hash=" + opts["hash"] + " --filesystem=" + opts["filesystem"] + " --password=" + escape(passphrase) + " --keyfiles='' " + opts["path"])
+	os.popen("truecrypt -t -c --random-source=\"/dev/random\" --volume-type=" + opts["volume-type"] + " --size=" + opts["size"] + " --encryption=" + opts["encryption"] + " --hash=" + opts["hash"] + " --filesystem=" + opts["filesystem"] + " --password=" + escape(passphrase) + " --keyfiles='' " + opts["path"])
 
 	if name != "master.tc":
 		if query_yes_no("Would you like to mount " + name + " now?") == "yes":
@@ -404,7 +404,7 @@ def changePassphrase(opts = {}):
 		new_passphrase = getPass()
 
 	print "Changing passphrase, this might take a while"
-	os.popen("truecrypt -t -C --new-keyfiles='' --random-source='/dev/urandom' -p=" + escape(old_passphrase) + " --new-password=" + escape(new_passphrase) + " " + container_path)
+	os.popen("truecrypt -t -C --new-keyfiles='' --random-source='/dev/random' -p=" + escape(old_passphrase) + " --new-password=" + escape(new_passphrase) + " " + container_path)
 
 	if opts["drive"] != "master.tc" and use_master_container == "yes":
 		# TODO Only do this if passphrase update succeeded
